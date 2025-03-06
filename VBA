@@ -1,0 +1,22 @@
+    For i = 35 To 46
+        If ws.Range("B" & i).Value <> "" Then
+            ws.Range("M" & i).Value = 0
+        Else
+            ws.Range("M" & i).Value = ""
+        End If
+        If ws.Range("B" & i).Value <> "" Then
+            ws.Range("O" & i).Value = 0
+        Else
+            ws.Range("O" & i).Value = ""
+        End If
+        If ws.Range("B" & i).Value <> "" Then
+            ws.Range("Q" & i).Value = 0
+        Else
+            ws.Range("Q" & i).Value = ""
+        End If
+        If ws.Range("B" & i).Value <> "" Then
+            ws.Range("S" & i).Value = "OK"
+        Else
+            ws.Range("S" & i).Value = ""
+        End If
+    Next i
